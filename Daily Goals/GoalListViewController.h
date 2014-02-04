@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface GoalListViewController : UITableViewController
-
+@property(nonatomic, readwrite, retain) UIView *backgroundView;
 @end
