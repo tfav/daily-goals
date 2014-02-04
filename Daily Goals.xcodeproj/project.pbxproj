@@ -19,6 +19,11 @@
 		1F544007189CBE3400A82278 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F543FEF189CBE3400A82278 /* UIKit.framework */; };
 		1F54400F189CBE3400A82278 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F54400D189CBE3400A82278 /* InfoPlist.strings */; };
 		1F544011189CBE3400A82278 /* Daily_GoalsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F544010189CBE3400A82278 /* Daily_GoalsTests.m */; };
+		1F54401E189CC67700A82278 /* AddGoalItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F54401D189CC67700A82278 /* AddGoalItemViewController.m */; };
+		1F544021189CC71B00A82278 /* GoalListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F544020189CC71B00A82278 /* GoalListViewController.m */; };
+		1F544024189D70BE00A82278 /* GoalItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F544023189D70BE00A82278 /* GoalItem.m */; };
+		1F544027189D900900A82278 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F544026189D900900A82278 /* AboutViewController.m */; };
+		1F5EABD818A07E300080B598 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F5EABD718A07E300080B598 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +53,15 @@
 		1F54400C189CBE3400A82278 /* Daily GoalsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Daily GoalsTests-Info.plist"; sourceTree = "<group>"; };
 		1F54400E189CBE3400A82278 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1F544010189CBE3400A82278 /* Daily_GoalsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Daily_GoalsTests.m; sourceTree = "<group>"; };
+		1F54401C189CC67700A82278 /* AddGoalItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddGoalItemViewController.h; sourceTree = "<group>"; };
+		1F54401D189CC67700A82278 /* AddGoalItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddGoalItemViewController.m; sourceTree = "<group>"; };
+		1F54401F189CC71B00A82278 /* GoalListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoalListViewController.h; sourceTree = "<group>"; };
+		1F544020189CC71B00A82278 /* GoalListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoalListViewController.m; sourceTree = "<group>"; };
+		1F544022189D70BE00A82278 /* GoalItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoalItem.h; sourceTree = "<group>"; };
+		1F544023189D70BE00A82278 /* GoalItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoalItem.m; sourceTree = "<group>"; };
+		1F544025189D900900A82278 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		1F544026189D900900A82278 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		1F5EABD718A07E300080B598 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,8 +123,17 @@
 			children = (
 				1F543FFA189CBE3400A82278 /* AppDelegate.h */,
 				1F543FFB189CBE3400A82278 /* AppDelegate.m */,
+				1F54401C189CC67700A82278 /* AddGoalItemViewController.h */,
+				1F54401D189CC67700A82278 /* AddGoalItemViewController.m */,
+				1F5EABD718A07E300080B598 /* Main.storyboard */,
 				1F543FFD189CBE3400A82278 /* Images.xcassets */,
 				1F543FF2189CBE3400A82278 /* Supporting Files */,
+				1F54401F189CC71B00A82278 /* GoalListViewController.h */,
+				1F544020189CC71B00A82278 /* GoalListViewController.m */,
+				1F544022189D70BE00A82278 /* GoalItem.h */,
+				1F544023189D70BE00A82278 /* GoalItem.m */,
+				1F544025189D900900A82278 /* AboutViewController.h */,
+				1F544026189D900900A82278 /* AboutViewController.m */,
 			);
 			path = "Daily Goals";
 			sourceTree = "<group>";
@@ -219,6 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F5EABD818A07E300080B598 /* Main.storyboard in Resources */,
 				1F543FF6189CBE3400A82278 /* InfoPlist.strings in Resources */,
 				1F543FFE189CBE3400A82278 /* Images.xcassets in Resources */,
 			);
@@ -239,7 +263,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F544027189D900900A82278 /* AboutViewController.m in Sources */,
+				1F54401E189CC67700A82278 /* AddGoalItemViewController.m in Sources */,
+				1F544021189CC71B00A82278 /* GoalListViewController.m in Sources */,
 				1F543FFC189CBE3400A82278 /* AppDelegate.m in Sources */,
+				1F544024189D70BE00A82278 /* GoalItem.m in Sources */,
 				1F543FF8189CBE3400A82278 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -441,6 +469,7 @@
 				1F544016189CBE3400A82278 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F544017189CBE3400A82278 /* Build configuration list for PBXNativeTarget "Daily GoalsTests" */ = {
 			isa = XCConfigurationList;
@@ -449,6 +478,7 @@
 				1F544019189CBE3400A82278 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
